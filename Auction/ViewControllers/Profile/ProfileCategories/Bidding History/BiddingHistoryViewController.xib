@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BiddingHistoryViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="j8Y-QZ-cY3" id="c7s-8L-YV9"/>
+                <outlet property="backButtonTitle" destination="ruA-2m-v0O" id="CGK-S8-khq"/>
+                <outlet property="tableView" destination="z5a-Yk-4NY" id="qXg-8Y-DwB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z5a-Yk-4NY">
+                    <rect key="frame" x="0.0" y="70" width="375" height="597"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="2tj-iM-GgC"/>
+                        <outlet property="delegate" destination="-1" id="P4p-4v-DMY"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unpaid Wins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruA-2m-v0O">
+                    <rect key="frame" x="44" y="37" width="103" height="22"/>
+                    <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="2ek-ep-TxF" appends="YES" id="3Is-17-jip"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8Y-QZ-cY3">
+                    <rect key="frame" x="10" y="36" width="24" height="24"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="dIg-7Y-UNP"/>
+                        <constraint firstAttribute="width" constant="24" id="uO2-FR-DFW"/>
+                    </constraints>
+                    <state key="normal" image="ic_backarrow_black"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="2ek-ep-TxF" appends="YES" id="uAk-O5-xWQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ruA-2m-v0O" firstAttribute="centerY" secondItem="j8Y-QZ-cY3" secondAttribute="centerY" id="3Kk-rd-E4n"/>
+                <constraint firstAttribute="bottom" secondItem="z5a-Yk-4NY" secondAttribute="bottom" id="7rM-35-e0l"/>
+                <constraint firstItem="z5a-Yk-4NY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="G28-R9-b2e"/>
+                <constraint firstItem="ruA-2m-v0O" firstAttribute="leading" secondItem="j8Y-QZ-cY3" secondAttribute="trailing" constant="10" id="SW4-gI-MH5"/>
+                <constraint firstItem="z5a-Yk-4NY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="ba9-D1-9a1"/>
+                <constraint firstItem="j8Y-QZ-cY3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="nyt-Ja-IVo"/>
+                <constraint firstAttribute="trailing" secondItem="z5a-Yk-4NY" secondAttribute="trailing" id="pEK-1x-xVb"/>
+                <constraint firstItem="j8Y-QZ-cY3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="sSb-nL-DUY"/>
+            </constraints>
+        </view>
+        <tapGestureRecognizer id="2ek-ep-TxF">
+            <connections>
+                <action selector="backButtonGesture:" destination="-1" id="4T2-fP-4Qy"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_backarrow_black" width="9" height="16"/>
+    </resources>
+</document>

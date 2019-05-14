@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+        <array key="Exo2.0-Regular.otf">
+            <string>Exo2.0-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="320" id="KGk-i7-Jjw" customClass="ItemCell" customModule="Auction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="319.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-BI-mA1">
+                        <rect key="frame" x="16" y="0.0" width="389" height="279.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W01-me-upz" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="16" y="0.0" width="358" height="195.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1M-Es-wBG">
+                                <rect key="frame" x="124" y="207.5" width="141" height="22"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start price: 0,01$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZI-ib-JPR">
+                                <rect key="frame" x="134" y="233.5" width="121.5" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="16"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g1M-Es-wBG" firstAttribute="top" secondItem="W01-me-upz" secondAttribute="bottom" constant="12" id="9GK-wX-kNh"/>
+                            <constraint firstItem="W01-me-upz" firstAttribute="top" secondItem="xvm-BI-mA1" secondAttribute="top" id="APy-YO-hiS"/>
+                            <constraint firstItem="CZI-ib-JPR" firstAttribute="centerX" secondItem="xvm-BI-mA1" secondAttribute="centerX" id="Tg9-Pm-i52"/>
+                            <constraint firstAttribute="bottom" secondItem="W01-me-upz" secondAttribute="bottom" constant="84" id="VwT-12-3Cj"/>
+                            <constraint firstAttribute="trailing" secondItem="W01-me-upz" secondAttribute="trailing" constant="15" id="WZE-5x-TSR"/>
+                            <constraint firstItem="g1M-Es-wBG" firstAttribute="centerX" secondItem="xvm-BI-mA1" secondAttribute="centerX" id="eQH-vp-WLN"/>
+                            <constraint firstItem="CZI-ib-JPR" firstAttribute="top" secondItem="g1M-Es-wBG" secondAttribute="bottom" constant="4" id="ezz-Il-JWq"/>
+                            <constraint firstItem="W01-me-upz" firstAttribute="leading" secondItem="xvm-BI-mA1" secondAttribute="leading" constant="16" id="kQ0-Xr-olJ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG3-UN-zEQ">
+                        <rect key="frame" x="129.5" y="267.5" width="161" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLa-gk-hYg" customClass="CountdownLabel" customModule="CountdownLabel">
+                                <rect key="frame" x="80.5" y="20" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16862745098039217" green="0.396078431372549" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="161" id="0iP-OA-rNS"/>
+                            <constraint firstItem="DLa-gk-hYg" firstAttribute="centerX" secondItem="AG3-UN-zEQ" secondAttribute="centerX" id="34M-UR-9zy"/>
+                            <constraint firstAttribute="height" constant="40" id="WM7-1f-Tkk"/>
+                            <constraint firstItem="DLa-gk-hYg" firstAttribute="centerY" secondItem="AG3-UN-zEQ" secondAttribute="centerY" id="prC-L1-wrf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xvm-BI-mA1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gw2-48-eZl"/>
+                    <constraint firstAttribute="bottom" secondItem="xvm-BI-mA1" secondAttribute="bottom" constant="40" id="Rbm-n8-9oj"/>
+                    <constraint firstItem="AG3-UN-zEQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="cbZ-1G-y6t"/>
+                    <constraint firstItem="xvm-BI-mA1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="d9W-nh-6tF"/>
+                    <constraint firstItem="AG3-UN-zEQ" firstAttribute="top" secondItem="xvm-BI-mA1" secondAttribute="bottom" constant="-12" id="osl-ul-le6"/>
+                    <constraint firstAttribute="trailing" secondItem="xvm-BI-mA1" secondAttribute="trailing" constant="15" id="yEz-ix-not"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="insideView" destination="xvm-BI-mA1" id="ICc-7Y-6iI"/>
+                <outlet property="nameLabel" destination="g1M-Es-wBG" id="nn9-UP-jfa"/>
+                <outlet property="priceLabel" destination="CZI-ib-JPR" id="doa-wp-8rS"/>
+                <outlet property="slideShowView" destination="W01-me-upz" id="2Zl-2w-wxe"/>
+                <outlet property="timerLabel" destination="DLa-gk-hYg" id="gPL-SG-qVn"/>
+                <outlet property="timerView" destination="AG3-UN-zEQ" id="6kf-AU-rkl"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Regular.otf">
+            <string>Exo2.0-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="btnTab1" destination="v6J-TS-V75" id="ujN-iJ-ySe"/>
+                <outlet property="btnTab1constantLeft" destination="JCc-dt-hM9" id="4GQ-2x-deS"/>
+                <outlet property="btnTab2" destination="oqo-X1-Nmz" id="p92-5S-B8O"/>
+                <outlet property="btnTab3" destination="OKM-wf-tjR" id="uae-7x-yRr"/>
+                <outlet property="containerBarHeight" destination="ftS-EP-D2t" id="MSh-cd-VtP"/>
+                <outlet property="containerBarView" destination="O4z-WG-lvD" id="XCq-4U-ZU1"/>
+                <outlet property="searchButton" destination="MMK-1X-7Ix" id="dYS-Fw-ddd"/>
+                <outlet property="searchTextField" destination="O76-7c-agy" id="47G-IQ-fLF"/>
+                <outlet property="spaceBetweenTabs" destination="kCG-I8-3CQ" id="C7W-5k-9qK"/>
+                <outlet property="switchStyleButton" destination="nHI-my-jCq" id="Rym-Ke-uSv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewLine" destination="vWL-iu-rcM" id="EDB-JX-ztc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4z-WG-lvD">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbq-8U-Gbv">
+                            <rect key="frame" x="0.0" y="82" width="375" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6J-TS-V75">
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="40"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="17"/>
+                                    <state key="normal" title="New">
+                                        <color key="titleColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnOptionClickedWithBtn:" destination="-1" eventType="touchUpInside" id="Yc6-f4-EoS"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqo-X1-Nmz">
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="40"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="17"/>
+                                    <state key="normal" title="Closed">
+                                        <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnOptionClickedWithBtn:" destination="-1" eventType="touchUpInside" id="piQ-F8-3hD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKM-wf-tjR">
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="40"/>
+                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="17"/>
+                                    <state key="normal" title="Bookmarked">
+                                        <color key="titleColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnOptionClickedWithBtn:" destination="-1" eventType="touchUpInside" id="Fcu-17-dRY"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vWL-iu-rcM">
+                                    <rect key="frame" x="20" y="37" width="84" height="3"/>
+                                    <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="3" id="eZr-xD-UUY"/>
+                                        <constraint firstAttribute="width" constant="84" id="wkW-fN-3bn"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="OKM-wf-tjR" firstAttribute="height" secondItem="v6J-TS-V75" secondAttribute="height" id="10Q-ki-p4g"/>
+                                <constraint firstAttribute="trailing" secondItem="OKM-wf-tjR" secondAttribute="trailing" id="4Gl-9X-9oW"/>
+                                <constraint firstItem="OKM-wf-tjR" firstAttribute="width" secondItem="v6J-TS-V75" secondAttribute="width" id="9n8-Xa-YxL"/>
+                                <constraint firstItem="oqo-X1-Nmz" firstAttribute="height" secondItem="v6J-TS-V75" secondAttribute="height" id="H3n-0B-nc9"/>
+                                <constraint firstAttribute="height" constant="40" id="HCv-zx-QY1"/>
+                                <constraint firstItem="v6J-TS-V75" firstAttribute="leading" secondItem="mbq-8U-Gbv" secondAttribute="leading" id="JCc-dt-hM9"/>
+                                <constraint firstItem="v6J-TS-V75" firstAttribute="top" secondItem="mbq-8U-Gbv" secondAttribute="top" id="W89-7R-OGl"/>
+                                <constraint firstAttribute="bottom" secondItem="v6J-TS-V75" secondAttribute="bottom" id="YXb-ac-NCc"/>
+                                <constraint firstItem="oqo-X1-Nmz" firstAttribute="width" secondItem="v6J-TS-V75" secondAttribute="width" id="hYr-eC-8go"/>
+                                <constraint firstItem="oqo-X1-Nmz" firstAttribute="leading" secondItem="v6J-TS-V75" secondAttribute="trailing" constant="1" id="kCG-I8-3CQ"/>
+                                <constraint firstItem="OKM-wf-tjR" firstAttribute="centerY" secondItem="v6J-TS-V75" secondAttribute="centerY" id="paU-X3-ITE"/>
+                                <constraint firstItem="oqo-X1-Nmz" firstAttribute="centerY" secondItem="v6J-TS-V75" secondAttribute="centerY" id="pfc-ZT-kxr"/>
+                                <constraint firstItem="OKM-wf-tjR" firstAttribute="leading" secondItem="oqo-X1-Nmz" secondAttribute="trailing" constant="1" id="qFa-Bm-u6B"/>
+                                <constraint firstAttribute="bottom" secondItem="vWL-iu-rcM" secondAttribute="bottom" id="rFM-Ws-ptb"/>
+                                <constraint firstItem="vWL-iu-rcM" firstAttribute="centerX" secondItem="v6J-TS-V75" secondAttribute="centerX" id="wuU-mt-FC6"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMK-1X-7Ix" customClass="SearchButton" customModule="Auction" customModuleProvider="target">
+                            <rect key="frame" x="285" y="39" width="23" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="23" id="OXw-5E-G1C"/>
+                                <constraint firstAttribute="height" constant="24" id="Vrx-4Y-E2t"/>
+                            </constraints>
+                            <state key="normal" image="ic_search_button"/>
+                            <connections>
+                                <action selector="searchButtonAction:" destination="-1" eventType="touchUpInside" id="pP2-C5-5P6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHI-my-jCq" customClass="SearchButton" customModule="Auction" customModuleProvider="target">
+                            <rect key="frame" x="326" y="39" width="29" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="29" id="6P9-BZ-2Be"/>
+                                <constraint firstAttribute="height" constant="24" id="xjT-Eq-4d2"/>
+                            </constraints>
+                            <state key="normal" image="ic_switch_style_button"/>
+                            <connections>
+                                <action selector="switchButtonAction:" destination="-1" eventType="touchUpInside" id="xQJ-2z-i9B"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O76-7c-agy">
+                            <rect key="frame" x="14" y="36" width="263" height="30"/>
+                            <color key="tintColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HEL-XS-EWY"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="17"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="wJ0-E8-hXF"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="O76-7c-agy" firstAttribute="centerY" secondItem="O4z-WG-lvD" secondAttribute="centerY" constant="-10" id="Anx-8J-osq"/>
+                        <constraint firstAttribute="trailing" secondItem="nHI-my-jCq" secondAttribute="trailing" constant="20" id="HJB-bl-KMG"/>
+                        <constraint firstItem="nHI-my-jCq" firstAttribute="centerY" secondItem="MMK-1X-7Ix" secondAttribute="centerY" id="JUI-uH-sVh"/>
+                        <constraint firstItem="nHI-my-jCq" firstAttribute="leading" secondItem="MMK-1X-7Ix" secondAttribute="trailing" constant="18" id="KRY-49-Nr0"/>
+                        <constraint firstItem="mbq-8U-Gbv" firstAttribute="leading" secondItem="O4z-WG-lvD" secondAttribute="leading" id="ZpV-v6-PHc"/>
+                        <constraint firstAttribute="height" constant="122" id="ftS-EP-D2t"/>
+                        <constraint firstItem="MMK-1X-7Ix" firstAttribute="leading" secondItem="O76-7c-agy" secondAttribute="trailing" constant="8" id="g92-2r-9EB"/>
+                        <constraint firstItem="MMK-1X-7Ix" firstAttribute="centerY" secondItem="O76-7c-agy" secondAttribute="centerY" id="oTV-eQ-YUK"/>
+                        <constraint firstAttribute="trailing" secondItem="mbq-8U-Gbv" secondAttribute="trailing" id="qrX-oM-DMG"/>
+                        <constraint firstAttribute="bottom" secondItem="mbq-8U-Gbv" secondAttribute="bottom" id="rgD-JI-20N"/>
+                        <constraint firstItem="O76-7c-agy" firstAttribute="leading" secondItem="O4z-WG-lvD" secondAttribute="leading" constant="14" id="wcy-sD-1EZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="O4z-WG-lvD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="07B-GY-i3z"/>
+                <constraint firstItem="O4z-WG-lvD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="e4y-S4-G2F"/>
+                <constraint firstAttribute="trailing" secondItem="O4z-WG-lvD" secondAttribute="trailing" id="p7e-Pn-Wjy"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="LeC-Mg-dsh" appends="YES" id="Tyx-Wi-M41"/>
+            </connections>
+            <point key="canvasLocation" x="176.80000000000001" y="48.125937031484263"/>
+        </view>
+        <tapGestureRecognizer id="LeC-Mg-dsh">
+            <connections>
+                <action selector="endEditingGesture:" destination="-1" id="nyS-22-0rp"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_search_button" width="23" height="24"/>
+        <image name="ic_switch_style_button" width="26.5" height="25"/>
+    </resources>
+</document>

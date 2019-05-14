@@ -1,0 +1,64 @@
+PODS:
+  - AKMaskField (2.0.3)
+  - Alamofire (4.7.3)
+  - AlamofireImage (3.4.1):
+    - Alamofire (~> 4.7)
+  - CountdownLabel (4.0.1)
+  - FullMaterialLoader (0.2.2)
+  - ImageSlideshow (1.7.0):
+    - ImageSlideshow/Core (= 1.7.0)
+  - ImageSlideshow/Core (1.7.0)
+  - PinCodeTextField (0.1.0)
+  - Socket.IO-Client-Swift (13.3.1):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.6)
+  - SwiftyJSON (4.2.0)
+  - SwiftyJSONModel (2.3.0):
+    - SwiftyJSON (~> 4.0)
+  - UPCarouselFlowLayout (1.1.2)
+
+DEPENDENCIES:
+  - AKMaskField
+  - Alamofire (~> 4.7)
+  - AlamofireImage
+  - CountdownLabel
+  - FullMaterialLoader
+  - ImageSlideshow (~> 1.6)
+  - PinCodeTextField
+  - Socket.IO-Client-Swift (~> 13.3.0)
+  - SwiftyJSON (~> 4.0)
+  - SwiftyJSONModel
+  - UPCarouselFlowLayout
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AKMaskField
+    - Alamofire
+    - AlamofireImage
+    - CountdownLabel
+    - FullMaterialLoader
+    - ImageSlideshow
+    - PinCodeTextField
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftyJSON
+    - SwiftyJSONModel
+    - UPCarouselFlowLayout
+
+SPEC CHECKSUMS:
+  AKMaskField: b6d147524813e62cd3f15475fa2200ce7a3d2620
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlamofireImage: 78d67ccbb763d87ba44b21583d2153500a195630
+  CountdownLabel: c9975e3f329140b5e7d1f45cd63b1300badd1712
+  FullMaterialLoader: 96e0a87acd19c27b8b63f723ab06f1fc5df30578
+  ImageSlideshow: f8eec5e37a980f60923b585ff23b0e140fd24018
+  PinCodeTextField: a3c39be58bde3ed1d6888d0fb1d88b0a4a2277cc
+  Socket.IO-Client-Swift: 79f8f85fa44881838175a20f9bd2c32bef2c9d37
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyJSONModel: 014f92493a70d5a3f10e5dce8a24bee195fbd4a1
+  UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
+
+PODFILE CHECKSUM: bd189ade49ff8be84950b8a9b6aae8d4ae9723bf
+
+COCOAPODS: 1.5.3

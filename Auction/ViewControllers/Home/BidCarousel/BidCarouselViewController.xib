@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Bold.otf">
+            <string>Exo2.0-Bold</string>
+        </array>
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+        <array key="Exo2.0-Regular.otf">
+            <string>Exo2.0-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BidCarouselViewController" customModule="Auction" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="pg2-gs-4Up" id="lbF-gs-aZV"/>
+                <outlet property="backButtonTitle" destination="qmJ-l1-4nY" id="9XH-n8-UkL"/>
+                <outlet property="collectionView" destination="ybF-zr-Tq4" id="GZc-Rm-plm"/>
+                <outlet property="titleLabel" destination="TVV-bM-pAB" id="IVj-Oe-QNq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybF-zr-Tq4">
+                    <rect key="frame" x="0.0" y="173.5" width="375" height="260"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="XaC-zS-U6q"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f69-KM-0LM" customClass="UPCarouselFlowLayout" customModule="Auction" customModuleProvider="target">
+                        <size key="itemSize" width="200" height="248"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="sideItemScale">
+                                <real key="value" value="0.59999999999999998"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="sideItemAlpha">
+                                <real key="value" value="0.40000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </collectionViewFlowLayout>
+                    <cells/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Wbz-hq-WHJ"/>
+                        <outlet property="delegate" destination="-1" id="Xmq-2z-gCN"/>
+                    </connections>
+                </collectionView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_my_balance" translatesAutoresizingMaskIntoConstraints="NO" id="k1P-tI-7u8">
+                    <rect key="frame" x="32" y="489" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="24" id="7pc-jX-8hw"/>
+                        <constraint firstAttribute="height" constant="24" id="ehz-gO-mK3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My balance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EN5-lQ-AMv">
+                    <rect key="frame" x="73" y="490" width="94" height="22"/>
+                    <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZC5-8x-sA0">
+                    <rect key="frame" x="290.5" y="490" width="54.5" height="22"/>
+                    <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                    <color key="textColor" red="0.16862745098039217" green="0.396078431372549" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lec-Kp-Vaa">
+                    <rect key="frame" x="32" y="567" width="311" height="50"/>
+                    <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="l10-GJ-lct"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="16"/>
+                    <state key="normal" title="PayPall">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bids now 13$ each!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVV-bM-pAB">
+                    <rect key="frame" x="8" y="130" width="359" height="31.5"/>
+                    <fontDescription key="fontDescription" name="Exo2.0-Bold" family="Exo 2.0" pointSize="26"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg2-gs-4Up">
+                    <rect key="frame" x="10" y="36" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="ccr-UQ-JvJ"/>
+                        <constraint firstAttribute="width" constant="24" id="r9V-nt-WeX"/>
+                    </constraints>
+                    <state key="normal" image="ic_backarrow_white"/>
+                    <connections>
+                        <action selector="backButtonGesture:" destination="-1" eventType="touchUpInside" id="9pr-uF-GBh"/>
+                    </connections>
+                </button>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmJ-l1-4nY">
+                    <rect key="frame" x="44" y="36" width="53" height="24"/>
+                    <gestureRecognizers/>
+                    <fontDescription key="fontDescription" name="Exo2.0-Regular" family="Exo 2.0" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="gIT-Br-46l" appends="YES" id="dBQ-sO-OWv"/>
+                    </connections>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="EN5-lQ-AMv" firstAttribute="leading" secondItem="k1P-tI-7u8" secondAttribute="trailing" constant="17" id="1HW-y4-6yz"/>
+                <constraint firstItem="ybF-zr-Tq4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="25B-Ne-g3n"/>
+                <constraint firstItem="lec-Kp-Vaa" firstAttribute="leading" secondItem="k1P-tI-7u8" secondAttribute="leading" id="3eH-3K-FYw"/>
+                <constraint firstItem="qmJ-l1-4nY" firstAttribute="leading" secondItem="pg2-gs-4Up" secondAttribute="trailing" constant="10" id="59O-Lw-S2S"/>
+                <constraint firstItem="ybF-zr-Tq4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CQ1-fW-uqK"/>
+                <constraint firstAttribute="bottom" secondItem="lec-Kp-Vaa" secondAttribute="bottom" constant="50" id="E77-q5-Rhs"/>
+                <constraint firstItem="TVV-bM-pAB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="FLT-Nw-KMW"/>
+                <constraint firstItem="qmJ-l1-4nY" firstAttribute="centerY" secondItem="pg2-gs-4Up" secondAttribute="centerY" id="Jzh-fb-xpW"/>
+                <constraint firstAttribute="trailing" secondItem="TVV-bM-pAB" secondAttribute="trailing" constant="8" id="UYN-Ca-gyO"/>
+                <constraint firstItem="ZC5-8x-sA0" firstAttribute="centerY" secondItem="EN5-lQ-AMv" secondAttribute="centerY" id="XoM-Ov-kQV"/>
+                <constraint firstItem="ybF-zr-Tq4" firstAttribute="top" secondItem="TVV-bM-pAB" secondAttribute="bottom" constant="12" id="dBd-0O-YRz"/>
+                <constraint firstItem="lec-Kp-Vaa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fuc-Q7-ePJ"/>
+                <constraint firstItem="k1P-tI-7u8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="gOn-lY-TqN"/>
+                <constraint firstItem="EN5-lQ-AMv" firstAttribute="centerY" secondItem="k1P-tI-7u8" secondAttribute="centerY" id="k7l-nc-h6j"/>
+                <constraint firstAttribute="trailing" secondItem="ZC5-8x-sA0" secondAttribute="trailing" constant="30" id="mF4-1K-eLV"/>
+                <constraint firstItem="pg2-gs-4Up" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="vXc-Tb-XBS"/>
+                <constraint firstItem="pg2-gs-4Up" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="36" id="zIM-ib-Xz3"/>
+                <constraint firstItem="lec-Kp-Vaa" firstAttribute="top" secondItem="EN5-lQ-AMv" secondAttribute="bottom" constant="55" id="zXU-du-lNa"/>
+                <constraint firstAttribute="trailing" secondItem="ybF-zr-Tq4" secondAttribute="trailing" id="zt0-r7-UPH"/>
+            </constraints>
+        </view>
+        <tapGestureRecognizer id="gIT-Br-46l">
+            <connections>
+                <action selector="backButtonGesture:" destination="-1" id="EGR-4p-qgu"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_backarrow_white" width="9" height="16"/>
+        <image name="ic_my_balance" width="24" height="24"/>
+    </resources>
+</document>

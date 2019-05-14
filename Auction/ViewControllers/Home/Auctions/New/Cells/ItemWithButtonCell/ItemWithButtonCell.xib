@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Bold.otf">
+            <string>Exo2.0-Bold</string>
+        </array>
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemWithButtonCell" rowHeight="152" id="KGk-i7-Jjw" customClass="ItemWithButtonCell" customModule="Auction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-Cm-DLN">
+                        <rect key="frame" x="18" y="6" width="344" height="132.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="porsche4" translatesAutoresizingMaskIntoConstraints="NO" id="dhl-Ph-6JF">
+                                <rect key="frame" x="9" y="-1" width="135" height="135"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="OQl-ll-526"/>
+                                    <constraint firstAttribute="width" constant="135" id="ppY-Up-PGX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of the item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arx-oq-pSM">
+                                <rect key="frame" x="156" y="11" width="144.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Bold" family="Exo 2.0" pointSize="18"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price: 0,58$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-53-7rV">
+                                <rect key="frame" x="156" y="36" width="144.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="16"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bets: 24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M60-BL-ZyM">
+                                <rect key="frame" x="156" y="58" width="144.5" height="17"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="14"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAO-GX-IqA">
+                                <rect key="frame" x="171" y="86" width="161" height="40"/>
+                                <color key="backgroundColor" red="0.16862745100000001" green="0.39607843139999999" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="161" id="LGS-4m-Q7y"/>
+                                    <constraint firstAttribute="height" constant="40" id="VxT-0C-5M1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="16"/>
+                                <state key="normal" title="STARTED">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="itemPageButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Fge-cG-dOz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c25-xR-nz8">
+                                <rect key="frame" x="314" y="6" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="qzm-Rz-5eF"/>
+                                    <constraint firstAttribute="width" constant="24" id="zXe-Aw-N2C"/>
+                                </constraints>
+                                <state key="normal" image="ic_unselected_star"/>
+                                <connections>
+                                    <action selector="starButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Gck-od-1dJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lAO-GX-IqA" secondAttribute="trailing" constant="12" id="5aL-Ia-QsX"/>
+                            <constraint firstItem="c25-xR-nz8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="arx-oq-pSM" secondAttribute="trailing" constant="4" id="8Op-BC-jyV"/>
+                            <constraint firstItem="M60-BL-ZyM" firstAttribute="width" secondItem="arx-oq-pSM" secondAttribute="width" id="8dh-87-8dH"/>
+                            <constraint firstItem="TQS-53-7rV" firstAttribute="leading" secondItem="arx-oq-pSM" secondAttribute="leading" id="9QA-3z-Koj"/>
+                            <constraint firstItem="dhl-Ph-6JF" firstAttribute="centerY" secondItem="tLR-Cm-DLN" secondAttribute="centerY" id="EyT-X3-rQW"/>
+                            <constraint firstItem="lAO-GX-IqA" firstAttribute="bottom" secondItem="dhl-Ph-6JF" secondAttribute="bottom" constant="-8" id="FDi-Wl-xpT"/>
+                            <constraint firstItem="lAO-GX-IqA" firstAttribute="top" relation="greaterThanOrEqual" secondItem="M60-BL-ZyM" secondAttribute="bottom" constant="6" id="FM3-cM-wsg"/>
+                            <constraint firstItem="lAO-GX-IqA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dhl-Ph-6JF" secondAttribute="trailing" constant="27" id="MIz-gm-WcB"/>
+                            <constraint firstItem="TQS-53-7rV" firstAttribute="width" secondItem="arx-oq-pSM" secondAttribute="width" id="Md0-Y3-rUX"/>
+                            <constraint firstItem="dhl-Ph-6JF" firstAttribute="leading" secondItem="tLR-Cm-DLN" secondAttribute="leading" constant="9" id="MiT-ao-jYM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="arx-oq-pSM" secondAttribute="trailing" constant="6" id="Oq4-L4-PzK"/>
+                            <constraint firstItem="TQS-53-7rV" firstAttribute="top" secondItem="arx-oq-pSM" secondAttribute="bottom" constant="3" id="VzG-Gr-4EW"/>
+                            <constraint firstAttribute="trailing" secondItem="c25-xR-nz8" secondAttribute="trailing" constant="6" id="WOt-Yk-iiQ"/>
+                            <constraint firstItem="M60-BL-ZyM" firstAttribute="centerY" secondItem="tLR-Cm-DLN" secondAttribute="centerY" id="cq6-sH-IF9"/>
+                            <constraint firstItem="arx-oq-pSM" firstAttribute="leading" secondItem="dhl-Ph-6JF" secondAttribute="trailing" constant="12" id="hg5-uY-6sr"/>
+                            <constraint firstItem="M60-BL-ZyM" firstAttribute="top" secondItem="TQS-53-7rV" secondAttribute="bottom" constant="3" id="jqd-mH-xhx"/>
+                            <constraint firstItem="c25-xR-nz8" firstAttribute="centerY" secondItem="arx-oq-pSM" secondAttribute="centerY" constant="-4" id="oHb-oL-XuQ"/>
+                            <constraint firstItem="M60-BL-ZyM" firstAttribute="leading" secondItem="TQS-53-7rV" secondAttribute="leading" id="uAz-bm-EFE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tLR-Cm-DLN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="CiB-OP-MHx"/>
+                    <constraint firstAttribute="bottom" secondItem="tLR-Cm-DLN" secondAttribute="bottom" constant="6" id="Kwe-ru-rwL"/>
+                    <constraint firstItem="tLR-Cm-DLN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="QBq-gb-JoG"/>
+                    <constraint firstAttribute="trailing" secondItem="tLR-Cm-DLN" secondAttribute="trailing" constant="13" id="t2l-zO-bAJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bets" destination="M60-BL-ZyM" id="SHF-6t-lhW"/>
+                <outlet property="button" destination="lAO-GX-IqA" id="0hz-yb-ee6"/>
+                <outlet property="buttonWidth" destination="LGS-4m-Q7y" id="O1p-rB-Q9e"/>
+                <outlet property="insideView" destination="tLR-Cm-DLN" id="dJy-Bd-06M"/>
+                <outlet property="itemImage" destination="dhl-Ph-6JF" id="ESB-7F-RbK"/>
+                <outlet property="itemImageHeight" destination="OQl-ll-526" id="Yri-wT-mZq"/>
+                <outlet property="itemImageWidth" destination="ppY-Up-PGX" id="nDz-RY-xeQ"/>
+                <outlet property="price" destination="TQS-53-7rV" id="c6L-zS-dLF"/>
+                <outlet property="starButton" destination="c25-xR-nz8" id="jIS-Gp-TAx"/>
+                <outlet property="title" destination="arx-oq-pSM" id="rqr-Lb-uo6"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="234.33283358320841"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_unselected_star" width="24" height="24"/>
+        <image name="porsche4" width="560" height="315"/>
+    </resources>
+</document>

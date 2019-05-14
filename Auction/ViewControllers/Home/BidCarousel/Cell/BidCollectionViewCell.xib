@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Exo2.0-Bold.otf">
+            <string>Exo2.0-Bold</string>
+        </array>
+        <array key="Exo2.0-Medium.otf">
+            <string>Exo2.0-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BidCollectionViewCell" id="gTV-IL-0wX" customClass="BidCollectionViewCell" customModule="Auction" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="238"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="238"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76v-cv-hSE">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="238"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bid_card" translatesAutoresizingMaskIntoConstraints="NO" id="6Zx-JN-3QK">
+                                <rect key="frame" x="0.0" y="-16" width="191" height="254"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="78 $" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGi-p2-2Mv">
+                                <rect key="frame" x="30.5" y="87" width="78" height="48"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Bold" family="Exo 2.0" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="600 bids" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqn-WV-C2Y">
+                                <rect key="frame" x="116.5" y="81" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VnI-ut-nDA"/>
+                                    <constraint firstAttribute="width" constant="60" id="bNV-Vx-lUY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N0U-ib-TAD">
+                                <rect key="frame" x="0.0" y="197" width="191" height="41"/>
+                                <color key="backgroundColor" red="0.22817368590000001" green="0.33239647030000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="3C0-XO-aWE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13$ per bid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJS-5j-PfH">
+                                <rect key="frame" x="6" y="208" width="179" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Exo2.0-Medium" family="Exo 2.0" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao7-C3-F1e">
+                                <rect key="frame" x="0.0" y="197" width="191" height="10"/>
+                                <color key="backgroundColor" red="0.22817368590000001" green="0.33239647030000002" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="hwQ-Ja-5bB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LJS-5j-PfH" firstAttribute="centerY" secondItem="N0U-ib-TAD" secondAttribute="centerY" id="0dh-No-HoP"/>
+                            <constraint firstItem="iGi-p2-2Mv" firstAttribute="centerX" secondItem="6Zx-JN-3QK" secondAttribute="centerX" constant="-26" id="27V-Rg-nlv"/>
+                            <constraint firstItem="tqn-WV-C2Y" firstAttribute="leading" secondItem="iGi-p2-2Mv" secondAttribute="trailing" constant="8" id="GPO-Hj-uQV"/>
+                            <constraint firstItem="Ao7-C3-F1e" firstAttribute="leading" secondItem="76v-cv-hSE" secondAttribute="leading" id="Kjn-Ec-7xj"/>
+                            <constraint firstItem="6Zx-JN-3QK" firstAttribute="leading" secondItem="76v-cv-hSE" secondAttribute="leading" id="LRW-qf-bPd"/>
+                            <constraint firstItem="tqn-WV-C2Y" firstAttribute="centerY" secondItem="iGi-p2-2Mv" secondAttribute="centerY" id="Lg3-1j-EXj"/>
+                            <constraint firstAttribute="bottom" secondItem="6Zx-JN-3QK" secondAttribute="bottom" id="O3J-Ff-AML"/>
+                            <constraint firstItem="6Zx-JN-3QK" firstAttribute="top" secondItem="76v-cv-hSE" secondAttribute="top" constant="-16" id="RHB-K8-mcX"/>
+                            <constraint firstItem="LJS-5j-PfH" firstAttribute="leading" secondItem="76v-cv-hSE" secondAttribute="leading" constant="6" id="TtW-pd-Gti"/>
+                            <constraint firstAttribute="trailing" secondItem="Ao7-C3-F1e" secondAttribute="trailing" id="bHr-16-TK7"/>
+                            <constraint firstItem="Ao7-C3-F1e" firstAttribute="top" secondItem="N0U-ib-TAD" secondAttribute="top" id="joC-Qj-WuG"/>
+                            <constraint firstAttribute="bottom" secondItem="N0U-ib-TAD" secondAttribute="bottom" id="k0y-Jh-FNE"/>
+                            <constraint firstAttribute="trailing" secondItem="LJS-5j-PfH" secondAttribute="trailing" constant="6" id="mR8-EW-1dm"/>
+                            <constraint firstAttribute="trailing" secondItem="N0U-ib-TAD" secondAttribute="trailing" id="q2J-Z4-LAo"/>
+                            <constraint firstAttribute="trailing" secondItem="6Zx-JN-3QK" secondAttribute="trailing" id="qhf-Sf-N0M"/>
+                            <constraint firstItem="N0U-ib-TAD" firstAttribute="leading" secondItem="76v-cv-hSE" secondAttribute="leading" id="wee-hk-M9o"/>
+                            <constraint firstItem="iGi-p2-2Mv" firstAttribute="centerY" secondItem="6Zx-JN-3QK" secondAttribute="centerY" id="ycp-RA-0DW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="76v-cv-hSE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4qn-HY-hsI"/>
+                <constraint firstAttribute="trailing" secondItem="76v-cv-hSE" secondAttribute="trailing" id="Yg2-DC-59q"/>
+                <constraint firstAttribute="bottom" secondItem="76v-cv-hSE" secondAttribute="bottom" id="ctM-pj-f5C"/>
+                <constraint firstItem="76v-cv-hSE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nBM-PF-JZe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="218" height="323"/>
+            <connections>
+                <outlet property="backgroundImage" destination="6Zx-JN-3QK" id="JiH-6e-aWQ"/>
+                <outlet property="bidsCount" destination="tqn-WV-C2Y" id="gFL-Wk-yuU"/>
+                <outlet property="botView" destination="Ao7-C3-F1e" id="JBB-Ta-hqs"/>
+                <outlet property="bottomView" destination="N0U-ib-TAD" id="Qya-sO-DOm"/>
+                <outlet property="insideView" destination="76v-cv-hSE" id="PSk-3S-76v"/>
+                <outlet property="priceLabel" destination="iGi-p2-2Mv" id="hkk-SV-GHe"/>
+                <outlet property="retailLabel" destination="LJS-5j-PfH" id="mHv-7h-117"/>
+            </connections>
+            <point key="canvasLocation" x="212" y="79.160419790104953"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bid_card" width="241" height="288"/>
+    </resources>
+</document>
